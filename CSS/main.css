@@ -24,11 +24,11 @@ nav {
   background-color: #5b341d;
   flex-direction: column;
 }
-.container-header li a:hover {
+
+.container-header li :hover {
   font-size: 1.3rem;
   transition: .5s ease;
-  text-shadow: .1rem .1rem .1rem #333 ;
-
+  text-shadow: .5rem .5rem .5rem #333 ;
 }
 
 #logo-burger {
