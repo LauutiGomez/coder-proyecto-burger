@@ -5,7 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=8, initial-scale=1.0" />
+  <!-- link a bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- link a mi css -->
   <link rel="stylesheet" href="../CSS/main.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -13,46 +19,64 @@
     rel="stylesheet" />
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <title>Document</title>
+  <title>Locales</title>
 </head>
 
 <body>
+
+  <!-- se agrego nav de bootstrap -->
+
   <header id="header">
-    <nav class="container-header">
-      <a href="../index.html"><img src="../Images/logotipo.png" alt="logo de hamburguesa" id="logo-burger" /></a>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="nuestras-burgers.html">Nuestras Burgers</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="locales.html">Locales</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../Images/logotipo.png" alt="logo de hamburguesa"
+            id="logo-burger"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nuestras-burgers.html">Nuestras Burgers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locales.html">Locales</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="nuestros-locales">
-      <h2>Nuestros Locales</h2>
-    </div>
-    <div class="container-locales">
-      <div>
-        <ion-icon name="location-outline"></ion-icon>
-        <h4>Ubicacion</h4>
-        <span>Av. Juan Bautista Alberdi 6224</span>
-      </div>
-      <div>
-        <ion-icon name="location-outline"></ion-icon>
-        <h4>Ubicacion</h4>
-        <span>Av. Estanislao Zeballos 2612</span>
-      </div>
-    </div>
-    <div class="container-maps">
-      <div class="ubicacion-uno">
+  <main class="main-maps">
+    <h2>Nuestros Locales</h2>
+    <div class="container--maps">
+      <div class="ubicacion--uno">
+        <div>
+          <ion-icon name="location-outline"></ion-icon>
+          <h4>Ubicacion</h4>
+          <span>Av. Juan Bautista Alberdi 6224</span>
+        </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0068371694942!2d-58.506578119145836!3d-34.65453026146823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc90058431eed%3A0x53c9ba0bb3f2696d!2sAv.%20Juan%20Bautista%20Alberdi%206224%2C%20C1440%20ABN%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649709255561!5m2!1ses!2sar"
           width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="ubicacion-dos">
+      <div class="ubicacion--dos">
+        <div>
+          <ion-icon name="location-outline"></ion-icon>
+          <h4>Ubicacion</h4>
+          <span>Av. Estanislao Zeballos 2612</span>
+        </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6563.862218982812!2d-58.6452371743424!3d-34.65644269465824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75382c8053b%3A0xe4ed30d152de5caa!2sAv.%20Estanislao%20Zeballos%202612%2C%20B1712DBV%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649709614917!5m2!1ses!2sar"
           width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
@@ -63,6 +87,11 @@
   <footer id="footer">
     <p>&copy; Milton`s Burger - Coded By: Lautaro Gomez</p>
   </footer>
+
+  <!-- Link a Js de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
