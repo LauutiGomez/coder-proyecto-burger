@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h5 {
+    font: 1em;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    max-height: 100vh;
+  }
+  /* CSS index.html*/
+  /*CSS del HEADER para index.html, Contacto.html, Nosotros.html, Nuestras-burgers.html, locales.html */
+  nav {
+    display: $tipo-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container-header li :hover {
+    font-size: 1.3rem;
+    transition: 0.5s ease;
+    text-shadow: 0.5rem 0.5rem 0.5rem #333;
+  }
+  
+  #logo-burger {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0px 20px;
+    width: 9rem;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: $tipo-flex;
+    list-style: none;
+    margin: 0px 40px 0px 40px;
+    flex-direction: column;
+    align-items: center;
+
+    li{
+        padding: 5px 0px 5px 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+  }
+
+  /*MAIN*/
+  .container-main img {
+    width: 100%;
+  }
+  
+  .container-hamburguesas {
+    display: $tipo-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    margin: 10px 0px;
+    font-size: 2em;
+    text-align: center;
+  }
+  .container--menu,
+  .container--contactanos {
+    width: 50%;
+  }
+  .container--menu a {
+    display: $tipo-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../Images/menu.jpg);
+    height: 40vh;
+    width: 100%;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .container--menu:hover,
+  .container--contactanos:hover {
+    font-size: 2.5rem;
+    transition: 0.5s ease;
+  }
+  
+  .container--contactanos a {
+    display: $tipo-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../Images/contactanos.jpg);
+    height: 40vh;
+    width: 100%;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  /*FOOTER*/
+  
+  footer {
+    display: $tipo-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248,249,250);
+    color: rgb(0, 0, 0);
+    padding: 35px 35px;
+  }
+  
+  /*CSS DE NOSOTROS.html*/
+  /*MAIN */
+  .container--nosotros {
+    display: $tipo-flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        padding: 2rem 0px 0px 0px;
+    }
+
+    p{
+        display: $tipo-flex;
+        margin: 0px 25%;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+  }
+
+  .container--img {
+    height: 50%;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  
+  /*CSS DE Nuestras-burgers.html*/
+  .container-burgers {
+    display: $tipo-flex;
+    justify-content: center;
+    margin: 1.5rem 0px;
+  }
+  .item-burger {
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+
+    h5{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+  }
+  #lista-burgers li {
+    list-style: none;
+
+    img{
+        border-radius: 50%;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    span{
+        display: $tipo-flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+  }
+
+  /*CSS DE contacto.html*/
+  #main-form {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../Images/9222.jpg);
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+  }
+  
+  #formulario h3,
+  p {
+    justify-content: center;
+    padding: 30px 0px;
+    text-align: center;
+  }
+  
+  form {
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    flex-flow: column;
+    align-items: center;
+  }
+  .nombre-div,
+  .apellido-div,
+  .telefono-div,
+  .email-div {
+    display: block;
+    text-align: center;
+  }
+  .nombre-label,
+  .apellido-label,
+  .telefono-label,
+  .email-label {
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    text-align: left;
+    padding-top: 2vh;
+    display: flex;
+  }
+  #nombre-input,
+  #apellido-input,
+  #telefono-input,
+  #email-input {
+    width: 50%;
+    height: 1.4rem;
+    padding-left: 5px;
+    display: inline;
+    border: none;
+    border-radius: 4px;
+  }
+  .text-area-div {
+    text-align: center;
+  }
+  textarea {
+    width: 50%;
+    height: 50%;
+    font-size: 1rem;
+    padding-top: 2vh;
+  }
+  
+  .boton {
+    width: 100%;
+    height: auto;
+  }
+  #submit {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /*CSS DE locales.html*/
+  
+  .nuestros--locales {
+    display: $tipo-flex;
+    justify-content: center;
+    padding: 4rem 0px;
+  }
+  
+  .container--locales {
+    display: $tipo-flex;
+    justify-content: space-around;
+    padding: 2rem 0px;
+    font-size: 1.1rem;
+  }
+  .main-maps{
+    display: $tipo-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container--maps {
+    display: $tipo-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  .ubicacion--uno, .ubicacion--dos{
+    margin: 1rem auto;
+  }
+  .container--maps .ubicacion--uno iframe, .ubicacion--dos iframe {
+    width: 350px;
+    height: 300px;
+  }
+  
+  /*MEDIA QUERIES DESKTOP*/
+  @media only screen and (min-width: 768px) {
+    nav {
+      display: $tipo-flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+    nav ul {
+      display: $tipo-flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 0px 40px 0px 40px;
+    }
+  
+    nav ul li {
+      padding: 0px 10px 0px 10px;
+      margin: 0px 20px 0px 20px;
+    }
+    .container--maps {
+      display: $tipo-flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .ubicacion--uno, .ubicacion--dos{
+      margin: 1rem auto;
+      width: 40%;
+    }
+    .container--maps .ubicacion--uno iframe, .ubicacion--dos iframe {
+      width: 100%;
+      height: 450px;
+    }
+  }
