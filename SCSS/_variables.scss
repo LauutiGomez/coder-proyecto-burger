@@ -1,2 +1,25 @@
 //variables
 $tipo-flex: flex;
+
+//Extend
+.link-burguers {
+    display: $tipo-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+//Mixins
+@mixin size ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+//Operaciones
+$spacing: 5px;
