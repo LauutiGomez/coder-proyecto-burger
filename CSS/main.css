@@ -144,12 +144,25 @@ footer {
     margin: 0 auto; }
 
 /*CSS DE contacto.html*/
+.opinion h3 {
+  text-align: center;
+  padding-top: 20px; }
+
 #main-form {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/9222.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: white; }
+  display: flex;
+  justify-content: space-between; }
+
+.nuestras-redes {
+  text-align: center;
+  display: block;
+  align-self: center; }
+  .nuestras-redes h2 {
+    padding: 20px 10px;
+    text-align: center; }
+
+.svg-instagram {
+  width: 45px;
+  height: 45px; }
 
 #formulario h3,
 p {
@@ -164,7 +177,8 @@ form {
   font-size: 1.1rem;
   opacity: 0.9;
   flex-flow: column;
-  align-items: center; }
+  align-items: center;
+  background-color: #bdbdbd; }
 
 .nombre-div,
 .apellido-div,

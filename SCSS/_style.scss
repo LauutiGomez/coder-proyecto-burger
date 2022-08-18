@@ -173,16 +173,30 @@ footer {
 }
 
 /*CSS DE contacto.html*/
-#main-form {
-  background-image: linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url(../Images/9222.jpg);
 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: white;
+.opinion h3{
+  text-align: center;
+  padding-top: 20px;
+}
+
+#main-form {
+  display: $tipo-flex;
+  justify-content: space-between;
+}
+
+.nuestras-redes{
+  text-align: center;
+  display: block;
+  align-self: center;
+  h2{
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+
+.svg-instagram{
+  width: 45px;
+  height: 45px;
 }
 
 #formulario h3,
@@ -200,6 +214,7 @@ form {
   opacity: 0.9;
   flex-flow: column;
   align-items: center;
+  background-color: rgb(189, 189, 189);
 }
 
 .nombre-div,
