@@ -27,7 +27,7 @@ nav {
   flex-direction: column;
 }
 
-.container-header li :hover {
+.container-header li:hover {
   font-size: 1.3rem;
   transition: 0.5s ease;
   text-shadow: 0.5rem 0.5rem 0.5rem #333;
@@ -54,7 +54,6 @@ nav ul {
 
   a {
     text-decoration: none;
-    color: white;
   }
 }
 
@@ -173,84 +172,56 @@ footer {
 }
 
 /*CSS DE contacto.html*/
+
+.opinion {
+  p{
+    margin: 30px 0px;
+    text-align: center;
+  }
+
+  h3{
+  text-align: center;
+  margin: 20px 0px;
+}
+}
 #main-form {
-  background-image: linear-gradient(0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url(../Images/9222.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: white;
-}
-
-#formulario h3,
-p {
-  justify-content: center;
-  padding: $spacing*6 0px;
-  text-align: center;
-}
-
-form {
-  margin: auto;
-  padding: 1.5rem;
-  border-radius: 0.25rem;
-  font-size: 1.1rem;
-  opacity: 0.9;
-  flex-flow: column;
-  align-items: center;
-}
-
-.nombre-div,
-.apellido-div,
-.telefono-div,
-.email-div {
-  display: block;
-  text-align: center;
-}
-
-.nombre-label,
-.apellido-label,
-.telefono-label,
-.email-label {
-  font-size: 1.2rem;
-  text-align: center;
-  justify-content: center;
-  text-align: left;
-  padding-top: 2vh;
   display: $tipo-flex;
+  justify-content: space-around
+}
+
+.nuestras-redes{
+  text-align: center;
+  display: block;
+  align-self: center;
+  h2{
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+
+.svg-instagram{
+  width: 45px;
+  height: 45px;
 }
 
 #nombre-input,
-#apellido-input,
-#telefono-input,
-#email-input {
-  @include size(1.4rem, 50%);
-  padding-left: 5px;
-  display: inline;
+#email-input{
+  height: 30px;
+  width: 31rem;
+  margin: 10px 0px;
+}
+
+#text-area{
+  margin: 10px 0px;
+  resize: none;
+}
+
+#submit{
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
-}
-
-.text-area-div {
-  text-align: center;
-}
-
-textarea {
-  @include size(50%, 50%);
-  font-size: 1rem;
-  padding-top: 2vh;
-}
-
-.boton {
-  @include size(auto, 100%)
-}
-
-#submit {
-  width: 50%;
-  margin: 10px auto;
-  display: block;
+  background-color: rgb(252, 226, 205);
 }
 
 /*CSS DE locales.html*/
